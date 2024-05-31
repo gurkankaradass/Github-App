@@ -24,11 +24,11 @@
             </div>
 
             <div class="searchHeader col-sm-12 col-md-4 col-lg-4 mt-3">
-                <form>
-                    <input type="text" class="form-control" placeholder="Search for Github User...">
+                <form id="searchFrom">
+                    <input id="githubName" type="text" class="form-control" placeholder="Search for Github User...">
                     <div class="buttonGroup">
                         <button type="submit" class="btn btn-success btn-sm mx-2">Search</button>
-                        <button type="reset" class="btn btn-secondary btn-sm">Clear</button>
+                        <button type="reset" id="clearButton" class="btn btn-secondary btn-sm">Clear</button>
                     </div>
                 </form>
             </div>
@@ -37,7 +37,7 @@
         <div id="profileContentDiv" class="row mt-2 pl-3 pb-3 pr-3">
 
             <div id="profileInfo" class="col-sm-12 col-md-3 col-lg-3 mt-3">
-                <div id="profileDiv">
+                <!-- <div id="profileDiv">
                     <img id="profileImg" class="mb-2" src="images/profile.jpg" width="200px" height="200px">
                     <div id="badgeDiv" class="mt-1">
                         <button type="button" class="btn btn-outline-success btn-sm mt-2">
@@ -46,7 +46,7 @@
                         <button type="button" class="btn btn-outline-primary btn-sm mx-2 mt-2">
                             Following <span class="badge text-bg-primary">2</span>
                         </button>
-                        <button type="button" class="btn btn-outline-danger btn-sm mt-2">
+                        <button id="showRepos" type="button" class="btn btn-outline-danger btn-sm mt-2">
                             Repositories <span class="badge text-bg-danger">7</span>
                         </button>
                     </div>
@@ -57,26 +57,26 @@
                         <img src="images/location.png" width="20" height="20">
                         <span>Kayseri</span>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <div id="reposDiv" class="col-sm-12 col-md-5 col-lg-5 mt-3">
                 <h4 style="text-align: center;">Repositories</h4>
                 <hr>
-                <table class="table table-striped">
+                <table id="table" class="table table-striped">
                     <thead>
                         <tr>
                             <th scope="col">No</th>
                             <th scope="col">Project Name</th>
-                            <th scope="col">Creation Date</th>
+                            <th scope="col">Language</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody id="tableContent">
+                        <!-- <tr>
                             <th scope="row">1</th>
                             <td>Github-App</td>
-                            <td>31.05.2024</td>
-                        </tr>
+                            <td>Javascript</td>
+                        </tr> -->
                     </tbody>
                 </table>
             </div>
@@ -84,13 +84,12 @@
             <div id="searchHistory" class="col-sm-12 col-md-3 col-lg-3 mt-3">
                 <div id="searchMain" class="mt-2">
                     <h4>Recent Searches</h4>
-                    <button type="reset" class="btn btn-secondary btn-sm">Clear</button>
+                    <button id="clearHistory" type="reset" class="btn btn-secondary btn-sm">Clear All</button>
                 </div>
                 <hr>
                 <div class="searchList mt-3">
-                    <ul class="list-group">
-                        <li class="list-group-item">gurkankaradass</li>
-                        <li class="list-group-item">enesbayyram</li>
+                    <ul id="searchedUserList" class="list-group">
+                        <!-- <li class="list-group-item">gurkankaradass</li> -->
                     </ul>
                 </div>
             </div>
@@ -98,7 +97,10 @@
 
     </div>
 
-
+    <script src="js/storage.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/github.js"></script>
+    <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
