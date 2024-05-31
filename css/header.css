@@ -1,0 +1,33 @@
+#githubLogo {
+    width: 60px;
+}
+
+.header {
+    background-color: #fff;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header * {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header-title {
+    font-family: Arial, ;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.buttonGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

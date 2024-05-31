@@ -1,0 +1,39 @@
+#profileContentDiv {
+    background-color: #fff;
+    border: 1px solid lightgrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#profileDiv {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profileImg {
+    border-radius: 50%;
+}
+
+#badgeDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#reposDiv,
+#searchHistory,
+#profileInfo {
+    background-color: #fff;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#searchMain {
+    display: flex;
+    justify-content: space-around;
+}
